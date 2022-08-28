@@ -72,6 +72,9 @@
             height: 310px;
             background: url(../../img/intro_mobile-img.svg) no-repeat center center;
             background-size: cover;
+            top: 0;
+            right: 50%;
+            transform: translateX(50%);
         }
     }
     .intro__content-wrapper{
