@@ -229,7 +229,7 @@ img {
   display: block;
   width: 600px;
   height: 555px;
-  background: url(../../img/intro_img.png) no-repeat center center;
+  background: url(../../img/intro_img.svg) no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -304,7 +304,7 @@ img {
     display: block;
     width: 338px;
     height: 310px;
-    background: url(../../img/intro_mobile-img.png) no-repeat center center;
+    background: url(../../img/intro_mobile-img.svg) no-repeat center center;
     background-size: cover;
   }
   .intro__content-wrapper {
