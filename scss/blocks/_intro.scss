@@ -1,0 +1,94 @@
+.intro{
+    margin-bottom: 114px;
+    padding-top: 120px;
+    padding-bottom: 104px;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 600px;
+        height: 555px;
+        background: url(../../img/intro_img.png) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.intro__content-wrapper{
+    max-width: 458px;
+    color: $black;
+}
+.intro__title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+.intro__description{
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 18px;
+    margin-bottom: 45px;
+}
+.intro__link-wrapper{
+    display: flex;
+    align-items: center;
+}
+.intro__watch-link{
+    margin-left: 50px;
+    color: $green;
+    position: relative;
+    text-decoration: underline;
+    font-weight: 600;
+    line-height: 24px;
+    &::before{
+        content: '';
+        display: block;
+        width: 15px;
+        height: 18px;
+        background: url(../../img/intro_triangle.svg) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -25px;
+    }
+}
+.site-link--intro{
+    padding: 15px 41px 14px;
+}
+@media only screen and (max-width:$mobile){
+    .intro{
+        margin-bottom: 100px;
+        padding-top: 321px;
+        padding-bottom: 0;
+        position: relative;
+        text-align: center;
+        &::before{
+            content: '';
+            display: block;
+            width: 338px;
+            height: 310px;
+            background: url(../../img/intro_mobile-img.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+    .intro__content-wrapper{
+        max-width: 369px;
+    }
+    .intro__title{
+        font-size: 36px;
+        line-height: 60px;
+    }
+    .intro__description{
+        margin: 0 auto;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        max-width: 326px;
+    }
+    .site-link--intro{
+        padding: 15px 24px 14px 25px;
+        margin-right: 28px;
+    }
+}
