@@ -105,4 +105,12 @@
         width: 350px;
         height: 319px;
     }
+    .management-item__support-description--red::before{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .management-item__support-description--red::after{
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
