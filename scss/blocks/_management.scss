@@ -1,0 +1,12 @@
+.management{
+    margin-bottom: 150px;
+}
+.management__list{
+    @include list-style;
+    color: $black;
+}
+@media only screen and (max-width:$mobile){
+    .management{
+        margin-bottom: 67px;
+    }
+}

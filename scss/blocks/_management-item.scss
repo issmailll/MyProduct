@@ -1,0 +1,108 @@
+.management-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+}
+.management-item__text-wrapper{
+    max-width: 486px;
+}
+.management-item__text{
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+}
+.management-item__title{
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+.management-item__title-description{
+    margin: 0;
+}
+.management-item__accessory-title{
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.management-item__accessoru-description{
+    margin: 0;
+}
+.management-item__alternative-title{
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.management-item__support-description{
+    padding-left: 65px;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-color: #FF9900;
+        border-radius: 14px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 16px;
+        height: 12px;
+        background: url(../../img/management_tick.svg) no-repeat center center;
+        position: absolute;
+        top: 12px;
+        left: 10px;
+    }
+}
+.management-item__support-description--red::before{
+    background-color: #F03E3D;
+}
+.management-item__support-description--blue::before{
+    background-color: #4D8DFF;
+}
+@media only screen and (max-width:$mobile){
+    .management-item{
+        flex-direction: column-reverse;
+        margin-bottom: 97px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:nth-child(2n){
+            flex-direction: column-reverse;
+        }
+    }
+    .management-item__text-wrapper{
+        max-width: 356px;
+    }
+    .management-item__text{
+        margin-top: 50px;
+    }
+    .management-item__title{
+        margin-bottom: 16px;
+    }
+    .management-item__accessory-title{
+        margin-top: 16px;
+    }
+    .management-item__alternative-title{
+        margin-top: 16px;
+    }
+    .management-item__img{
+        width: 350px;
+        height: 319px;
+    }
+}
